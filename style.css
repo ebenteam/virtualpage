@@ -310,7 +310,7 @@ a:hover, a:active {
 }
 
 .hero-slider .swiper-pagination-bullet-active {
-    color: #ff5a00;
+    color: #ff590080;
 }
 
 .hero-slider .swiper-button-next,
@@ -319,12 +319,12 @@ a:hover, a:active {
     height: 70px;
     margin-top: -35px;
     border-radius: 50%;
-    background: -moz-linear-gradient(180deg, rgba(255,90,0,1) 0%, rgba(255,54,0,1) 100%); /* ff3.6+ */
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255,90,0,1)), color-stop(100%, rgba(1255,54,0,1))); /* safari4+,chrome */
-    background: -webkit-linear-gradient(180deg, rgba(255,90,0,1) 0%, rgba(255,54,0,1) 100%); /* safari5.1+,chrome10+ */
-    background: -o-linear-gradient(180deg, rgba(255,90,0,1) 0%, rgba(255,54,0,1) 100%); /* opera 11.10+ */
-    background: -ms-linear-gradient(180deg, rgba(255,90,0,1) 0%, rgba(255,54,0,1) 100%); /* ie10+ */
-    background: linear-gradient(270deg, rgba(255,90,0,1) 0%, rgba(255,54,0,1) 100%); /* w3c */
+    background: -moz-linear-gradient(180deg, rgba(255, 89, 0, 0.418) 0%, rgba(255, 89, 0, 0.418) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 89, 0, 0.603)), color-stop(100%, rgba(1255,54,0,1))); /* safari4+,chrome */
+    background: -webkit-linear-gradient(180deg, rgba(255, 89, 0, 0.609) 0%, rgba(255, 55, 0, 0.568) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(180deg, rgba(255, 89, 0, 0.63) 0%, rgba(255, 55, 0, 0.616) 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(180deg, rgba(255, 89, 0, 0.555) 0%, rgba(255, 55, 0, 0.507) 100%); /* ie10+ */
+    background: linear-gradient(270deg, rgba(255, 89, 0, 0.493) 0%, rgba(255, 55, 0, 0.548) 100%); /* w3c */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5a00', endColorstr='#ff3600',GradientType=1 ); /* ie6-9 */
     transition: all .35s;
 }
@@ -566,14 +566,14 @@ ul.tabs-nav .tab-nav.active {
 # Circular Progress Bar
 ----------------------------------*/
 .circular-progress-bar {
-    margin: 20px 0;
+    margin: 10px 0;
     text-align: center;
 }
 
 .circular-progress-bar .circle {
     position: relative;
-    width: 156px;
-    height: 156px;
+    width: 120px;
+    height: 120px;
     margin: 0 auto;
 }
 
@@ -583,10 +583,10 @@ ul.tabs-nav .tab-nav.active {
     left: 0;
     margin-top: -24px;
     width: 100%;
-    font-size: 48px;
+    font-size: 30px;
     font-weight: 500;
     line-height: 1;
-    color: #262626;
+    color: #575555;
 }
 
 .circular-progress-bar .circle strong i {
@@ -599,7 +599,7 @@ ul.tabs-nav .tab-nav.active {
     margin-top: 32px;
     font-size: 18px;
     font-weight: 600;
-    color: #262626;
+    color: #37353d;
 }
 
 /*
@@ -1125,6 +1125,7 @@ ul.tabs-nav .tab-nav.active {
     padding-top: 100px;
     padding-bottom: 72px;
     background-size: cover !important;
+    
 }
 
 .single-page .page-header::after {
@@ -1135,7 +1136,7 @@ ul.tabs-nav .tab-nav.active {
     z-index: -1;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,.7);
+    
 }
 
 .single-page .page-header h1 {
@@ -1161,12 +1162,80 @@ ul.tabs-nav .tab-nav.active {
     background: url(images/about-bg.jpg) no-repeat center;
 }
 
+
+/*--------------------------------------------------------------
+# About Page
+--------------------------------------------------------------*/
+.single-page .page-quienes {
+    position: relative;
+    z-index: 99;
+    padding-top: 100px;
+    padding-bottom: 72px;
+    background-size: cover !important;
+    background: rgba(0,0,0,.7);
+}
+
+.single-page .page-quienes::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.single-page .page-quienes h1 {
+    position: relative;
+    padding-bottom: 24px;
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.single-page .page-quienes h1::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 64px;
+    height: 4px;
+    border-radius: 2px;
+    background: #ff5a00;
+}
+
+.about-page .page-quienes {
+    background: url(images/quienesbaner.jpg) no-repeat center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .about-page .welcome-wrap {
     padding: 96px 0;
 }
 
 .about-page .welcome-content .entry-title {
-    color: #262626;
+    color: #2626264b;
 }
 
 @media screen and (max-width: 992px){
@@ -1185,8 +1254,8 @@ ul.tabs-nav .tab-nav.active {
 }
 
 .about-stats {
-    padding: 96px 0;
-    background: #262626;
+    padding: 40px 0;
+    background: #ff5a00;
 }
 
 .about-stats .circular-progress-bar .circle strong,
